@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Method</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango" ];
+        document.getElementById("demo").innerHTML= fruits;
+
+        // toString() is one method to convert array to string
+        // document.getElementById("demo").innerHTML = fruits.toString();
+
+        // join() is another method to convert array to string
+        // document.getElementById("demo").innerHTML = fruits.join('*');
+
+        // pop() method is used to remove last element from array
+        // document.getElementById("demo").innerHTML= fruits.pop() 
+
+        // push() method is used to add element in array at last
+        // document.getElementById("demo").innerHTML= fruits.push('Kiwi') 
+        // document.getElementById("demo").innerHTML= fruits;
+
+
+        // shift() method remove first element from array
+        // document.getElementById("demo").innerHTML =  fruits.shift()
+
+        // unshift() method add new elements to array at first
+        // document.getElementById("demo").innerHTML =  fruits.unshift("Lemon");
+        // document.getElementById("demo").innerHTML= fruits;
+
+        // splice() method can be used to add new items to an array
+
+        // 1st parameter i.e 1 defines the position where new elements should be added
+        // 2nd parameter i.e 0 defines how many elements to be removed
+        // document.getElementById("demo").innerHTML = fruits.splice(1, 1, "Lemon", "kiwi");
+        // document.getElementById("demo").innerHTML= fruits;
+
+        // slice() method slices out a piece of an array into a new array
+        var citrus = fruits.slice(1,3)
+        document.getElementById("demo").innerHTML = fruits +"<br>" + citrus;
+
+
+
+
+    </script>
+</body>
+</html>

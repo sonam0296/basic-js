@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <button onClick="Function1()">
+            Sort Alphabetically
+  </button>
+        <button onClick="Function2()">
+            Sort Numerically/ Min Order
+  </button>
+        <button onClick="RandomFunc()">
+            Sort Array in Random Order
+  </button>
+        <button onClick="MaxFunc()">
+            Sort Array in Max Order
+  </button>
+        <p id="demo"></p>
+
+        <script>
+            var arr = [40,100,50, 12,1,5];
+            document.getElementById("demo").innerHTML = arr;
+
+            function Function1(){
+                arr.sort();
+                document.getElementById("demo").innerHTML = arr;
+            }
+
+            function Function2(){
+                arr.sort(function (a, b) { return a - b });
+                document.getElementById("demo").innerHTML = arr;
+            }
+
+            function RandomFunc(){
+                arr.sort(function (a, b) { return 0.5 - Math.random() });
+                document.getElementById("demo").innerHTML = arr;
+            }
+
+            function MaxFunc(){
+                arr.sort(function (a, b) { return b - a });
+                document.getElementById("demo").innerHTML = arr;
+            }
+  </script>
+    </body>
+
+</html>
